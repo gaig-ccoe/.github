@@ -1,0 +1,12 @@
+{
+    "name": "GAIG-CCOE Wiz IaC Scan",
+    "description": "GAIG-CCOE Wiz IaC Scan starter workflow.",
+    "categories": [
+        "Automation",
+        "code-quality",
+        "code-review"
+    ],
+    "filePatterns": [
+        ".*\\.tf$"
+    ]
+}
