@@ -1,6 +1,6 @@
 {
-    "name": "GAIG-CCOE Wiz IaC Scan",
-    "description": "GAIG-CCOE Wiz IaC Scan starter workflow.",
+    "name": "GAIG-CCOE IaC Workflow Template",
+    "description": "GAIG-CCOE IaC starter workflow.  Includes Wiz code scanning.",
     "categories": [
         "Automation",
         "code-quality",

@@ -1,0 +1,22 @@
+name: IaC_Workflow_Template
+on:
+  workflow_call:
+    inputs:
+      repository:
+        required: true
+        type: string
+    secrets:
+      wiz_client_id:
+        required: true
+      wiz_client_secret:
+        required: true
+jobs:
+  call-wiz-iac-code-scan:  # this job calls the Wiz scanner job to scan your Terraform code
+      uses: gaig-ccoe/ccoe-org-github-actions/.github/workflows/wiz_code_scan.yml@main
+      with:
+          repository: ${{ github.repository }}
+      secrets: inherit # pass all secrets
+
+#########################################
+# ADD OTHER JOBS BELOW                  #
+#########################################
