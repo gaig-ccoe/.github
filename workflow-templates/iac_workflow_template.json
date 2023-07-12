@@ -5,5 +5,7 @@
         "Automation",
         "code-quality",
         "code-review"
+    ],
+    "filePatterns": [
     ]
 }
