@@ -5,15 +5,12 @@ on:
       repository:
         required: true
         type: string
-    secrets:
-      wiz_client_id: ${{ secrets.WIZ_CLIENT_ID }}
-      wiz_client_secret: ${{ secrets.WIZ_CLIENT_SECRET }}
 jobs:
   call-wiz-iac-code-scan:  # this job calls the Wiz scanner job to scan your Terraform code
       uses: gaig-ccoe/ccoe-org-github-actions/.github/workflows/wiz_code_scan.yml@main
       with:
           repository: ${{ github.repository }}
-      secrets: inherit # pass all secrets
+
 
 #########################################
 # ADD OTHER JOBS BELOW                  #
